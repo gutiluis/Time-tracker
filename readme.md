@@ -6,16 +6,16 @@ Time Tracker App. It works with a CSV file, and it stores data on the time we've
 Utilities:
 - Start tracking time we're spending on project for a client (which is reflected in the CSV)
 - Stop tracking time on a project we're currently working on (also reflected in the CSV)
-- Calculate the total times we've spent on a client by entering their ID when prompted
-  - And we can choose to see data from a specific date range
+- Calculate the total times spent per client by entering their ID when prompted
+  - choose a specific date range
   - Or within the X number of days
-  - Or simply retrieve all the data we have from that client
+  - Or simply retrieve all the data from that client
 
 
 
 ### Getting started:
 1. Create a virtual environment for this project
-2. Install `dateutil`
+2. Install dateutil
 
 ### Extra challenges
 - Create a helper function that returns "now" as a datetime string. Both `start_tracking()` and `stop_tracking()` can use this
