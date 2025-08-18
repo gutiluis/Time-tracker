@@ -2,8 +2,8 @@ Time Tracker App
 ---
 
 ### Introduction
-Welcome to the Time Tracker App. It works with a CSV file, and it stores data on the time we've spent working on projects for different clients. When the app is run, it loads data from the CSV and presents users with a menu.
-We can:
+Time Tracker App. It works with a CSV file, and it stores data on the time we've for different clients. When the app is run, it loads data from the CSV and presents users with a menu.
+Utilities:
 - Start tracking time we're spending on project for a client (which is reflected in the CSV)
 - Stop tracking time on a project we're currently working on (also reflected in the CSV)
 - Calculate the total times we've spent on a client by entering their ID when prompted
@@ -16,12 +16,6 @@ We can:
 ### Getting started:
 1. Create a virtual environment for this project
 2. Install `dateutil`
-
-
-
-1. `start_tracking()` and `stop_tracking()` in `functions.py` - Start and stop time tracking
-2. `display_all_totals()` in `functions.py` - Calculate and display all tracked time for a client
-3. `display_range_totals()` and `display_x_days_totals()` - Filter, calculate and display tracked time
 
 ### Extra challenges
 - Create a helper function that returns "now" as a datetime string. Both `start_tracking()` and `stop_tracking()` can use this
