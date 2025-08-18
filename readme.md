@@ -11,14 +11,14 @@ We can:
   - Or within the X number of days
   - Or simply retrieve all the data we have from that client
 
-Much of the logic and navigation of the app has already been written by other developers of your team. Your job is to complete the `datetime` related functions of the app. It is recommended to explore the files to see what data you have to work with.
+
 
 ### Getting started:
 1. Create a virtual environment for this project
-2. Install `dateutil` (the PPI name is `python-dateutil`!)
-3. Tackle the three `datetime` related functions below
+2. Install `dateutil`
 
-### Your mission, should you choose to accept it:
+
+
 1. `start_tracking()` and `stop_tracking()` in `functions.py` - Start and stop time tracking
 2. `display_all_totals()` in `functions.py` - Calculate and display all tracked time for a client
 3. `display_range_totals()` and `display_x_days_totals()` - Filter, calculate and display tracked time
@@ -29,5 +29,3 @@ Much of the logic and navigation of the app has already been written by other de
 - Create one function used to take a client and client job list to calculate and display data.
 - Use list comprehension, `filter()`, and `lambda` to filter through client jobs and date ranges
 ---
-
-Created for the [Team Treehouse](https://teamtreehouse.com/) Python Dates and Times (2023) course
