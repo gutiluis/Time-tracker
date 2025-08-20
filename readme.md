@@ -14,11 +14,11 @@ Current functions:
 
 
 ### Getting started:
-python3 -m venv venv
-source venv/bin/activate
-sudo apt update && sudo apt upgrade
-sudo apt install dateutil
-python3 main.py
+- python3 -m venv venv
+- source venv/bin/activate
+- sudo apt update && sudo apt upgrade
+- sudo apt install dateutil
+- python3 main.py
 
 
 To do:
