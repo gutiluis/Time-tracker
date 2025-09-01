@@ -1,30 +1,25 @@
 import csv
+import logging
 import utils
 import datetime # used with datetime.datetime.now()
 from dateutil import relativedelta
 
-
+logging.basicConfig(level=logging.INFO)
 
 # gather details from the user about the client and job description. and then use it in the menus.py script
 def start_tracking(client, description):
     print(f"Start tracking {description} for {client}")
-
     now = datetime.datetime.now()
-
     format_string = "%I:%M%p %Y-%m-%d"
-
     start_time = datetime.datetime.strftime(now, format_string)
-
     with open('data.csv', 'a', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', lineterminator='')
         writer.writerow([client, description, start_time, ''])
 
 def stop_tracking():
     print("Stopping tracking")
-
     now = datetime.datetime.now()
     format_string = "%I:%M%p %Y-%m-%d"
-
     end_time = datetime.datetime.strftime(now, format_string)
     with open('data.csv', 'a') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
@@ -33,7 +28,7 @@ def stop_tracking():
 
 def display_all_totals(client):
     print(f"Calculating time spent on all jobs for {client}...")
-# get_by_client from utils.py file
+    logging.debug("get_by_client from utils.py file")
     client_jobs = utils.get_by_client(client)
     total = relativedelta.relativedelta()
 
@@ -42,13 +37,9 @@ def display_all_totals(client):
         start_dt = datetime.datetime.strptime(job["start_time"], format_string)
         end_dt = datetime.datetime.strptime(job["end_time"], format_string)
         time_spent = relativedelta.relativedelta(end_dt, start_dt)
-
         print(f"{job['description']} - {time_spent.hours} hours {time_spent.minutes} minutes")
         total += time_spent
-        # print out job itselt
-# add time spent to the total
-    print(f"Total for {client}") # total is a relativedelta object
-#    print(f"X hours x minutes") # acces the hours/minutes of the relativedelta object directly
+    print(f"Total for {client}")
     print(f"{total.hours} hours {total.minutes} minutes")
 
 
