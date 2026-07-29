@@ -13,14 +13,13 @@ Works with a comma-separated values(CSV) file, and it stores data on the time va
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-sudo apt update && sudo apt upgrade
-sudo apt install dateutil
 python3 main.py
 ```
 
 ---
 
 ## Features
+
 - Main menu
 - Start tracking time spent per project for each client (which is reflected in the CSV)
 - Stop tracking time on a current project (also reflected in the CSV)
