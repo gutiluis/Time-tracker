@@ -1,3 +1,6 @@
+> [!WARNING]
+> CURRENTLY UNDER DEVELOPMENT
+
 # Time Tracker App with CSV
 
 
@@ -12,7 +15,6 @@ Works with a comma-separated values(CSV) file, and it stores data on the time va
 ```
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 pip install python-dateutil
 python3 main.py
 ```
@@ -32,6 +34,7 @@ python3 main.py
 ## Tech-Stack
 
 - Python
+- dateutil
 
 ---
 
